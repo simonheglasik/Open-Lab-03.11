@@ -6,7 +6,12 @@ namespace Open_Lab_03._11
     {
         public bool IsPalindrome(string str)
         {
-            throw new NotImplementedException();
+            string a = "";
+            for (int i = str.Length - 1; i >= 0; i--) 
+            {
+                a = a + str[i]; 
+            }
+            return a == str;
         } 
     }
 }
